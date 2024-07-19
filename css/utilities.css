@@ -1,0 +1,94 @@
+/*Font*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+/* General Rules */
+:root{
+	--darkPurpleColor: #6046b6;
+	--whiteColor: #FFF;
+    --darkGrayColor: #38393B;
+    --Gray7Color:#777;
+    --GrayE1Color:#E1E1E1;
+    --GrayF5Color:#F5F5F5;
+    --yellowColor: #ffe745;
+    --darkTextColor: #151515;
+    --mintGreenColor: #73cca1;
+    --lightGrayF3Color:#F3F3F3;
+    --form-select-padding-y: 0.375rem;
+}
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--Gray7Color);
+    text-align: left;
+    background-color: var(--whiteColor);
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+ul{
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+h1, h2, h3, h4, h5, h6{
+    font-size: 55px;
+    line-height: 1.1;
+    letter-spacing: .025em;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    color: var(--darkTextColor);
+}
+h1{
+    font-size: 85px;
+}
+.card{
+    border: none;
+}
+.section-padding-80{
+    padding: 80px 0;
+}
+.section-padding-100{
+    padding: 100px 0;
+}
+.mt-20{
+    margin-top: 20px;
+}
+.mt-30{
+    margin-top: 30px;
+}
+.mb-neg30{
+    margin-bottom: -30px;
+}
+.row-30 > *{
+    margin-bottom: 30px;
+}
+.row-20 > * {
+    margin-bottom: 20px;
+}
+* + .row-md{
+    margin-top: 45px;
+}
+.row-30{
+    margin-bottom: -30px;
+}
+.section-padding{
+    padding: 80px 0;
+}
+.mt-45{
+    margin-top: 45px;
+}
+.mb-60{
+    margin-bottom: 60px;
+}
+.mb-neg30{
+    margin-bottom: -30px;
+}

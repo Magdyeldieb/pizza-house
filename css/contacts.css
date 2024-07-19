@@ -1,0 +1,99 @@
+.contacts__content .row-20 > *{
+    padding-bottom:  20px;
+}
+.contacts__content .row-20 > *:not(:last-child){
+    border-bottom: 1px solid var(--lightGrayF3Color);
+}
+.contacts .form__quote::before{
+    left: 20px;
+}
+.contacts .booking__title{
+    text-align: left;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+.contacts__content{
+    margin-left: 40px;
+    padding-left: 40px;
+    position: relative;
+}
+.contacts__content::before{
+    content: "";
+    display: block;
+    height: 560px;
+    width: 1px;
+    background: var(--lightGrayF3Color);
+    position: absolute;
+    inset: 0;
+}
+.contacts__title{
+    font-size: 16px;
+}
+.contacts__title,.contacts__icons a, .contacts__text{
+    color: var(--darkTextColor);
+}
+.contacts__title,.contacts__icons a{
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.contacts__icons a{
+    font-size: 20px; 
+    display: inline-block;
+    width: 33px;
+}
+.contacts__icons a:hover,.contacts__icon,.contacts__text:hover{
+    color: var(--darkPurpleColor);
+}
+.contacts__text{
+    margin-left: 10px;
+    font-size: 16px;
+}
+.contacts__icon{
+    font-size: 20px;
+    display: inline-block;
+}
+.contacts__info, .contacts__icons{
+    margin-top: 20px;
+}
+/* .contacts__icons
+.contacts__info
+.contacts__icon
+.contacts__text */
+
+
+
+ /* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+    .contacts__content{
+        text-align: center;
+    }
+    .contacts__icons,.contacts__info{
+        justify-content: center;
+    }
+    .contacts__icons a{
+        text-align: center;
+    }
+    
+ }
+ /* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+
+    #bookingForm{
+       padding: 55px 50px 25px ;
+    }
+    .contacts__content::before{
+        display: none;
+    }
+    .contacts__content .row-20 > *:not(:last-child){
+        border-bottom: 0;
+    }
+    .contacts__content{
+        margin-left: 12px;
+        margin-top: 40px;
+        padding-left: 40px;
+    }
+    .contacts .booking__title{
+        text-align: center !important;
+    }
+ }

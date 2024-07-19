@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="En">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
+    <title>Pizza House</title>
+    <!-- C-D-N -->
+    <!-- Icons font aswsome V 6.2.1 Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Linearicons Free v1.0.0 -->
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <!-- Bootstrap link V5 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.rtl.min.css" integrity="sha384-+qdLaIRZfNu4cVPK/PxJJEy0B0f3Ugv8i482AKY7gwXwhaCroABd086ybrVKTa0q" crossorigin="anonymous">
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/header.css"/>
+    <link rel="stylesheet" href="css/footer.css"/>
+    <link rel="stylesheet" href="css/bgPage.css"/>
+    <link rel="stylesheet" href="css/utilities.css"/>
+    <link rel="stylesheet" href="css/animation.css"/>
+    <link rel="stylesheet" href="css/responsive.css"/>
+    <link rel="stylesheet" href="css/contactForm.css">
+    <link rel="stylesheet" href="css/commonStyles.css">
+    <link rel="stylesheet" href="css/shop.css"/>    
+</head>
+<body>  
+  <!-- Start Header -->
+  <header id="header"> 
+  </header>
+  <!-- End Header -->
+  <!-- start style-page -->
+  <section id="bgPage"></section>
+  <!-- end style-page -->
+  <section class="shop section-padding-100">
+  <div class="container">
+    <div class="row">
+        <div class="col-lg-4 col-xl-3">
+          <div class="aside">
+            <div class="row row-60">
+              <div class="aside__item col-sm-6 col-lg-12">
+                <h4 class="aside__title">Category</h4>
+                <span class="aside__filter">Filter by</span>
+                <ul class="aside__list">
+                    <li id="filterAll" data-pagination="false"  class="trigger"><a href="#">All</a></li>
+                    <li id="filterPizza" data-pagination="false" ><a href="#">Pizzas</a></li>
+                    <li id="filterDrink" data-pagination="false" ><a href="#">Drinks</a></li>
+                    <li id="filterBurger" data-pagination="false" ><a href="#">Burgers</a></li>
+                    <li id="filterSeafood" data-pagination="false" ><a href="#">Seafood</a></li>
+                    <li id="filterSalads" data-pagination="false" ><a href="#">Salads</a></li>
+                    <li id="filterDesserts" data-pagination="false" ><a href="#">Desserts</a></li>
+                    <li id="filterCal" data-pagination="false"  class="trigger"><a href="#">&lt;500 Cal</a></li>
+                </ul>
+                <div class="aside__search">
+                    <form action="" id="searchForm">
+                      <div class="d-flex">
+                        <input type="text" name="search"class="aside__search-style aside__search-input"  id="inputSearch" placeholder="Search by name" autocomplete="off">
+                        <button type="button"class="aside__search-style aside__search-btn" id="searchIcon" ><span class="aside__search-icon fa fa-search"></span></button>
+                      </div>
+                    </form>
+                </div>
+              </div>
+              <div class="aside__item col-sm-6 col-lg-12 order-lg-2">
+                <div class="popular__products">
+                  <div class="popular__products-content">
+                    <h4 class="aside__title">Popular Products</h4>
+                    <div class="popular__products-items">
+                    </div>               
+                  </div>
+                </div>
+              </div>
+              <div class="aside__item col-lg-12">
+                <h4 class="aside__title">Search by Price</h4>
+                <div class="aside__range-price">
+                  <div class="double__range-slider">
+                    <input type="range" id="input-left" min="1" step="0" max="55" value="5">
+                    <input type="range" id="input-right" min="2" step="0" max="60" value="30">
+                    <div class="slider">
+                      <div class="track"></div>
+                      <div class="range"></div>
+                    </div>
+                  </div>
+                  <div class="filter__price mt-4">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <button class="btn-fixed btn-change button-shadow button-primary" id="filterBtn">filter</button>
+                        <div class="show__price">
+                          <!-- Data comes from JS -->
+                          <span class="price-from">PRICE <span class="price--style">$
+                        <span class="price-from__value"></span></span> </span>
+                          <span class="price-to">- <span class=" price--style">$ <span class="price-to__value"></span></span></span>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>       
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8 col-xl-9">
+            <div class="d-flex pb-5">
+              <div class="col-lg-4 col-12">
+                <div class="form-wrap slideInDown">
+                  <select class="form__input  form-select" id="sortChoice">
+                    <option value="1"id="opt1">Sort by newness</option>
+                    <option value="2"id="opt2">Sort by price</option>
+                    <option value="3"id="opt3">Sort by popularity</option>
+                  </select>
+                  <div class="custom--arrow"><i class="fa-solid fa-caret-down"></i></div>
+                </div>
+              </div>
+            </div>
+            <div class="product row row-30 pt-4"></div>
+        </div>
+    </div>
+  </div>
+  <div style="margin-top:300px"></div>
+  </section>
+  <!-- Start Footer -->
+  <footer id="footer">
+  </footer>  
+  <!-- End Footer -->
+  <!-- JS bootstarb v.5-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <!-- JS files -->
+  <script src="js/doubleRangeSlider.js"></script>
+  <script  src="js/header.js"></script>
+  <script  src="js/footer.js"></script>
+  <script  src="js/bgPage.js"></script>
+  <script  src="./js/shop.js"></script>
+</body>
+</html>

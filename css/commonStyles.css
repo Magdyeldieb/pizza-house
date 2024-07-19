@@ -1,0 +1,138 @@
+.main__slider-title, .main__slider-text, .bg-feature__title, .bg-feature__text, .bg-feature-2 .bg-feature__special,.menu__text a,.menu__icon,.button-primary:hover, .button-primary:active,.button-secondary, .button-secondary:focus, .close,.new-badge,
+.popular-badge{
+    color: var(--whiteColor);
+}
+.main__slider-text,.dish__name,.bg-feature__special,.customer__name,.aside__search-input::placeholder,.popular__products-title,.aside__filter,.aside__list a{
+    font-size: 18px;
+}
+.button-primary, .button-primary:focus,.button-secondary:hover, .button-secondary:active,.menu__content:hover .menu__icon,.dish__caption-info,.dish__name,.service-title{
+    color: var(--darkTextColor);
+}
+.button-primary, .button-primary:focus,.button-secondary:hover, .button-secondary:active,.menu__content:hover .menu__icon, .dish__caption-info, .dish__content:hover .dish__name,.bg-feature__special::before,.sale-badge::before{
+    background: var(--yellowColor) ;
+}
+.button-primary, .button-primary:focus,.button-secondary, .button-secondary:focus{
+    transition: all .3s ease;
+}
+.button-primary:hover, .button-primary:active,.button-secondary, .button-secondary:focus,.popular-badge::before{
+    background: var(--mintGreenColor);
+}
+.button-secondary, .button-secondary:focus,.menu,.menu__icon,.menu__slider,.carousel-item,.bg-feature,.bg-feature__special,.customer__img,.services__content-icon,.aside__list li::before,.double__range-slider,.product__content{
+    position: relative;
+}
+.dish__content .btn-fixed,.customer__caption,.menu__text a,.dish__name,.service-title,.popular__products-title{
+    text-transform: capitalize;
+}
+.bg-feature,.dish__img,.menu__slider,.main__slider-img-1,.main__slider-img-2{
+    background-size: cover;
+}
+#closeBtn,.btn--close-slider,.dish__price,.dish__calories,.menu__slider-content,.customer__img img,.product--badge::before,.double__range-slider,.product--badge{
+    display: block;
+}
+.close, #closeBtn,.customer__img img,.menu__slider-content,.slider,.slider > .track,.slider > .range,input[type=range],.product--overlay-white,.product--badge{
+    position: absolute;
+}
+.bg-feature__special::before,.bg-feature::after,.slider::before,.slider::after,.services__content-icon::after, .services__content-icon::before,.menu__content::before,.dish__content::before,.menu__icon::after,.menu__caption,.dish__caption,.product--badge::before{
+    content: "";
+    position: absolute;
+}
+.bg-feature__text, .service-title,.menu__text a,.dish__name{
+    font-size: 24px;
+}
+.position-overflow,.menu__img, .dish__img,.dish__caption-info, .slider{
+    position: relative;
+    overflow: hidden;
+}
+.btn-fixed,.services__item,.dish__caption,.menu__caption,.menu__icon,.customer__content,.dish__price,.dish__calories,.close{
+    text-align: center;
+}
+.services__item, .services__icon,.menu__icon,.menu__img img, .dish__img img{
+    transition: all 0.2s ease;
+}
+.main__slider-title{
+    font-weight: 700;
+}
+.main__slider-text,.btn-fixed{
+    letter-spacing: 2px;
+}
+.main__slider-text,.bg-feature__special{
+    line-height: 1.5;
+}
+.btn-change,.menu__img img, .dish__img img,.aside__list li::before,.aside .btn-change{
+    display: inline-block;
+}
+.btn-fixed,.product--badge{
+    text-transform: uppercase;
+}
+.menu__img img, .dish__img img,.menu__content::before,.dish__content::before,.dish__content,.main__slider-img-1,.main__slider-img-2,.product--badge::before,.slider,input[type=range]{
+    width: 100%;
+}
+.dish__caption-info,.close,.dish__caption,.menu__caption{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dish__caption,.menu__caption{
+    flex-direction: column;
+}
+.services__item:hover .services__icon{
+    color: var(--mintGreenColor);
+}
+.menu__content:hover .menu__text a,.star--color{
+    color: var(--yellowColor);
+}
+.menu__content::before,.dish__content::before,.menu__caption,.dish__caption,.menu__icon,.close,.bg-feature,.slider,.slider > .track{
+   z-index: 1;
+}
+.menu__icon::after,.product--badge::before,.bg-feature::after{
+    z-index: -1;
+}
+.slider .slide-track:hover,.customer__content:hover,.dish__content:hover .dish__caption-info.pulse{
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+}
+.menu__text,.menu__icon,.dish__content,select,.aside__search-icon{
+    cursor: pointer;
+}
+.slider > .range,.new-badge::before{
+    background: var(--darkPurpleColor);
+}
+.services__icon,.customer__caption,.aside__search-input,.aside__search-icon:hover,.popular__products-price,.popular__products-cal,.aside__list a:hover,.aside__filter{
+    color: var(--darkPurpleColor);
+}
+.product--badge{
+    overflow: hidden;
+}
+input[type="range"]:focus,.aside__search-input:focus-visible{
+    outline: 0; 
+}
+.aside__search-input,.close{
+    border: 0;
+}
+.pagination{
+    display: none;
+}
+.menu__caption,.dish__caption,.menu__content::before,.dish__content::before,.bg-feature::after,.product--badge::before,.product--overlay-white,.slider > .track{
+    inset: 0;
+}
+.menu__content::before,.dish__content::before,input[type=range],.product--overlay-white{
+    height: 100%;
+}
+.bg-feature__title,.customer__name.aside__title{
+    text-transform: none;
+}
+.bg-feature__special,.bg-feature__text,.dish__price,.dish__calories,.aside__list a{
+    font-weight: 400;
+}
+.aside__filter,.menu__text a,.dish__name{
+    font-weight: 500;
+}
+.product--badge,.aside--active{
+    font-weight: 600;
+}
+.btn-change{
+    font-weight: 900; 
+}
+.btn-close:focus{
+    box-shadow: none;
+}

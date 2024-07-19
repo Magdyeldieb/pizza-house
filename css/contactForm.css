@@ -1,0 +1,139 @@
+/* Start Booking */
+button{
+    border: 0;
+}
+.form-select:focus {
+    outline: 0;
+    box-shadow: none;
+}
+.form__input:focus-visible,textarea:focus-visible{
+    outline: 0;
+    border: 0;
+    border-radius: 0;
+}
+.form__input:focus-visible,textarea:focus-visible{
+    border: 1px solid var(--GrayF5Color);
+}
+.form-wrap{
+    position: relative;
+}
+.custom--arrow,.custom--arrow i,.form-wrap::after,.form__quote::before{
+    position: absolute;
+}
+.custom--arrow,.form__input,textarea,.form-wrap.error::after,.form-wrap.invalid::after{
+    display: block;
+}
+.custom--arrow{
+    top: 0;
+    right: 6px;
+    height: 100%;
+    width:4em;
+    pointer-events: none;
+}
+.custom--arrow i{
+    color: #000;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    pointer-events: none;
+}
+.form__content {
+    position: relative;
+}
+.form--failed,.form--passed{
+    display: none;
+    font-size: 14px;
+    font-weight: 400;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    letter-spacing: 1px;
+    text-transform: none;
+}
+.form--failed{
+    color: red;
+}
+.form--passed{
+    color: green;
+}
+/* input[type="date"],input[type="time"]{
+cursor: pointer;
+} */
+input[type="date"]::-webkit-calendar-picker-indicator,input[type="time"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+}
+.form__input,textarea{
+    width: 100%;
+    min-height: 60px;
+    padding: 16px 25px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: .075em;
+    color: var(--Gray7Color);
+    background-color: var(--whiteColor);
+    background-image: none;
+    border-radius: 0;
+    transition: .3s ease-in-out;
+    border: 1px solid var(--GrayE1Color);
+}
+.form-wrap::after{
+    content: "Required";
+    display: none;
+    color: #F00;
+    top: 2px;
+    left: 15px;
+    font-size: 12px;
+    font-weight: bold;
+    z-index: 2;
+}
+.form-wrap.invalid::after {
+    content: "Letters Only";
+}
+.form-wrap.invalidNumber::after {
+    content: "Numbers Only";
+}
+.form-wrap.invalidEmail::after {
+    content: "Not Vaild Email";
+}
+option{
+   color: var(--whiteColor);
+   background: var(--darkPurpleColor);
+}
+option:hover{
+    background: var(--yellowColor);
+}
+textarea{
+    height: 150px;
+    min-height: 60px;
+    max-height: 255px;
+    resize: vertical;
+}
+.form-style{
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 5%);
+    padding: 55px 50px;
+}
+.form__quote{
+    font-size: 20px;
+    line-height: 1.375;
+    font-weight: 300;
+    font-style: italic;
+    letter-spacing: .075em;
+    position: relative;
+    padding: 0 0px 0 80px;
+}
+.form__quote::before{
+    left: -10px;
+    top: -25px;
+    content: '\201C';
+    font-size: 140px;
+    line-height: .88;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0;
+    font-family: "Raleway", sans-serif;
+    color: rgba(21, 21, 21, 0.07);
+    font-size: 180px;
+}
+
+/* End Booking */

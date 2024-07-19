@@ -1,0 +1,90 @@
+
+
+/* Start Responsive */
+/* Large devices (desktops, less than 1200px) */
+@media screen and (max-width: 1199.98px) { 
+    .main__slider-title{
+        font-size: 70px;
+        font-weight: 500;
+    }
+    .main__slider-img-1, .main__slider-img-2{
+        height: 488px;
+    }
+}
+ /* Medium devices (tablets, less than 992px) */
+@media screen and (max-width: 991.98px) { 
+    .main__slider-title{
+        font-size: 50px;
+    }
+    h3{
+        font-size: 45px;
+    }
+    .main__slider .row{
+        justify-content: center;
+        text-align: center;
+    }
+    .main__slider-title, .main__slider-text{
+        max-width: 100%;
+    }
+    .main__slider .pyx-80-120 {
+        padding: 80px 0;
+    }
+    footer form{
+        width: 50%;
+    }
+    .menu__icon{
+        width: 73px;
+        height: 73px;
+        line-height: 73px;
+        font-size: 35px
+    }
+    
+}
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px){ 
+    h3{
+        font-size: 40px;
+    }
+    .bg-feature__text{
+        font-size: 22px;
+    }
+    .like__img{
+        margin-left: 5px;
+        margin-bottom: 60px;
+    }
+    .footer--line-2 .row-30 > *{
+        margin-bottom: 0px;
+    }
+    .footer__img {
+        margin-bottom: 20px;
+    }
+
+}
+/* Extra small devices (portrait phones, less than 576px) */
+@media screen and (max-width: 575.98px) { 
+    .main__slider-img-1, .main__slider-img-2{
+        height: 470px;
+    }
+    .main__slider-title{
+        font-size: 42px;
+    }
+    h3{
+        font-size: 35px;
+    }
+    .bg-feature__text{
+        font-size: 20px;
+    }
+    footer form{
+        width: 80%;
+    }
+    .btn-change{
+        min-width:200px;
+        padding: 22px 30px;
+    }
+    .bg-feature-2 .btn-change, .booking .btn-change{
+        min-width: 160px;
+        padding: 20px 30px;
+    }
+    
+}
+/* End Responsive */

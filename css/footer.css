@@ -1,0 +1,132 @@
+/* Start Footer */
+footer{
+    background: var(--darkGrayColor);
+    padding: 30px 0;
+}
+.footer__img img{
+    width: 198px;
+    height: 66px;
+}
+.footer__title{
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+.footer__list{
+    columns: 2;
+    column-gap: 10px;
+    max-width: 250px;
+    text-align: left;
+}
+.footer__list li{
+    margin-bottom: 10px;
+}
+footer .btn-change{
+    min-width: 40px;
+    padding: 11px;
+}
+.footer-email{
+    width: 100%;
+    height: 43px;
+    padding: 10px 20px;
+}
+.form__icon button{
+    cursor: pointer;
+    height: 55px;
+    padding: 0 20px;
+    line-height: 1; /*the value 1 specifies line height as one times the size of text*/
+}
+footer form {
+    width: 85%;
+}
+footer form input{
+    width: 100%;
+    height: 55px;
+    padding: 5px 20px;
+    border: 0;
+    background: rgba(255, 255, 255, 0.15);
+}
+.footer--line-2{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 50px 0;
+}
+.like__img{
+    width:114px;
+    height:25px;
+    margin-left: 30px;   
+}
+.footer__img{
+    margin-bottom: 20px;
+}
+.like__img img,.footer__icon,.footer__img{
+    display: inline-block;
+}
+.like__text{
+    margin-left: 8px;
+    font-size: 24px;
+}
+.footer__icon{
+    padding-right: 12px;
+}
+.footer__list-social li{
+    padding-right: 10px;
+    margin-top: 4px;
+}
+.github-link,footer form input,.footer__list a{
+    color: rgba(255, 255, 255, 0.8);
+}
+.footer__icon span, .footer__list-social a{
+    background: var(--gray7Color);
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+    line-height: 35px;
+    text-align: center;
+}
+.footer__contact a,.footer__icon span, .footer__list-social a,.like__text,.scroll-to-top__icon:hover,.footer__title{
+    color: var(--whiteColor);
+} 
+.footer__contact a:hover, .github-link:hover,.footer__list a:hover{
+    color: var(--yellowColor);
+}
+.footer--line-3{
+    padding: 30px 0 10px;
+}
+footer input:focus-visible{
+    outline: 0;
+}
+.scroll-to-top__icon{
+    position: fixed;    
+    display: none;
+    z-index: 999;
+    background: var(--yellowColor);
+    height: 66px;
+    width: 66px;    
+    line-height: 64px;
+    right: 31px;
+    bottom: 130px;
+    color: var(--darkTextColor);
+    font-size: 28px;
+    text-align: center;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.scroll-to-top__icon:hover{
+    background: var(--darkPurpleColor);
+}
+.group-xmd{
+    margin-left: -90px;
+}
+.group-sm-justify{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: end;
+}
+@media screen and (max-width: 767px) {
+    .scroll-to-top__icon {
+      display: none !important;
+    }
+  }
+/* End Footer */
